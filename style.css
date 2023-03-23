@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2? family=Gloock&family=Hepta+Slab:wght@100;300;400&family=Josefin+Sans:wght@100;200&family=Kumbh+Sans:wght@900&family=Montserrat:wght@100;200;300;400;500&family=Public+Sans:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400& family=Six+Caps&family=Sora:wght@100;200;300;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+:root{
+    --background-mode-sombre : #121a2d;
+    --background-mode-claire : white;
+    --couleur-bloc : #1e2a4a;
+    --couleur-bouton : #0079fe;
+    --white : white;
+    --black : black;
+    
+}
+
+p{
+    font-family: 'Sora', sans-serif;
+
+}
+
+body{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-mode-sombre);
+    color: var(--white);
+    font-family: 'Ubuntu', Courier, monospace;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3{
+    font-family: 'Ubuntu', Courier, monospace;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h3::after{
+    content: '';
+    width: 70%;
+    background-color: var(--couleur-bouton);
+    color: red;
+    height: 5px;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    color: var(--couleur-bouton);
+}
+
+ul li a i{
+    font-size: 20px;
+}
+
+ul li a:hover {
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+ul li:not(.mode, .by){
+    margin: 10px;
+}
+
+.mode{
+    margin: 0 25px 0 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.by{
+    margin-right: 25px;
+}
+
+.header h3{
+    margin-left: 20px;
+}
+
+.ville{
+    margin: 0 auto;
+    width: 500px;
+    background-color: var(--couleur-bloc);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 10px;
+
+}
+
+.ville h4{
+    font-size: 30px;
+    margin: 15px;
+
+}
+
+.ville p{
+    width: 300px;
+    margin: 15px;
+    padding-bottom: 20px;
+    
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top:  1px solid rgb(95, 87, 87);
+   
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;  
+    position: relative;
+    height: 80px;
+    
+}
+
+.profil .image1{
+    width: 40px;
+    position: absolute
+}
+
+
+.profil .image2{
+    width: 70px;
+    position: absolute;
+    left: 10px;
+}
+
+.profil .image3{
+    width: 80px;
+    position: absolute;
+    left: 35px;
+}
+
+
+.jaime{
+    margin-right: 10px;
+}
+
+.jaime i{
+    font-size: 20px;
+}
+
+.jaime .fa-thumbs-up{
+color: var(--couleur-bouton);  
+}
+
+.jaime .fa-gratipay{
+    color: rgb(230, 19, 19);
+    }
+.formulaire{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction:  column;
+}
+
+input{
+    padding: 20px;
+    text-align: center;
+    color: var(--black);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Sora', sans-serif;
+    
+
+}
+
+button{
+    width: 30%;
+    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--couleur-bouton);
+    color: white;
+    font-size: 20px;
+    border: none;
+    transition: all 0.5s;
+    font-family: 'Sora', sans-serif;
+}
+
+button:hover{
+    filter: brightness(50%);
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    }
+
+    .temp{
+        background-color: var(--couleur-bloc);
+        border-radius: 20px;
+     
+    }
+
+    .temp .icone{
+        margin: 10px 0 0 15px;
+    }
+
+    .temp .degre{
+        margin-left: 15px;
+    }
+    
+    .div5 { 
+   
+        background-color: var(--white);
+        color: var(--background-mode-sombre);
+     }
+
+     .div5 i { 
+        margin: 15px 0 00 15px;
+   
+     }
+
+     .div5 .my-ville{
+        margin-left: 15px;
+     }
+
+
+
+.donnees{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 90%;
+  }
+
+ 
+
+  .temperature {
+    background-color: var(--couleur-bloc);
+    border-radius: 10px;
+  }
+  
+
+
+
+
+@media screen and (max-width : 700px) {
+
+    .by{
+        display: none;
+    }
+
+    .ville{
+        width: 80%;
+      
+    }
+
+    button{
+        width: 60%;
+    }
+    
+    .parent {
+        grid-template-columns: 1fr 1fr;
+     
+       
+        }
+}
+
