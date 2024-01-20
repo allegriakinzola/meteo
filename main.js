@@ -34,7 +34,7 @@ document.querySelector('#inputcity').addEventListener('change', function (e) {
 document.querySelector('form').addEventListener('submit', function(e){
     e.preventDefault();
     const ville = document.querySelector('#inputcity').value
-    getData(inputValue)
+    getData(ville)
 })
 
 
