@@ -201,6 +201,7 @@ button{
     border: none;
     transition: all 0.5s;
     font-family: 'Sora', sans-serif;
+    cursor: pointer;
 }
 
 button:hover{
