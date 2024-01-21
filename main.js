@@ -35,10 +35,8 @@ document.querySelector('form').addEventListener('submit', function(e) {
 });
 
 document.querySelector('#inputcity').addEventListener('change', function (e) {
-    e.preventDefault();
     const value = e.target.value;
     inputValue = value
-    console.log(value);
     if(inputValue = " "){
         document.querySelector(".small").innerHTML = ""
     }
