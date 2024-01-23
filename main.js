@@ -1,6 +1,3 @@
-
-
-
 const key = 'adc297d9a76b275a088913a61975b642';
 
 async function getData(ville) {
@@ -17,7 +14,11 @@ async function getData(ville) {
 function changeData(data) {
     if(data.name === undefined){
         document.querySelector('.my-ville').innerHTML = "aucune ville";
-        document.querySelector(".small").innerHTML = "cette ville n'existe pas"
+        document.querySelector(".small").innerHTML = "";
+        document.querySelector('.temperature').innerHTML = "";
+        document.querySelector('.humidite').innerHTML = "";
+        document.querySelector('.vent').innerHTML = "";
+        document.querySelector(".small").innerHTML = "";
     }else{
         document.querySelector('.my-ville').innerHTML = data.name;
         document.querySelector('.temperature').innerHTML = data.main.temp + "°";
