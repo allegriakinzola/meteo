@@ -14,17 +14,16 @@ async function getData(ville) {
 function changeData(data) {
     if(data.name === undefined){
         document.querySelector('.my-ville').innerHTML = "aucune ville";
-        document.querySelector(".small").innerHTML = "";
+        document.querySelector(".small").innerHTML = "cette ville n'existe pas";
         document.querySelector('.temperature').innerHTML = "";
         document.querySelector('.humidite').innerHTML = "";
         document.querySelector('.vent').innerHTML = "";
-        document.querySelector(".small").innerHTML = "";
     }else{
         document.querySelector('.my-ville').innerHTML = data.name;
         document.querySelector('.temperature').innerHTML = data.main.temp + "°";
         document.querySelector('.humidite').innerHTML = data.main.humidity + "%";
         document.querySelector('.vent').innerHTML = data.wind.speed + "km/h";
-        document.querySelector(".small").innerHTML = ""
+        document.querySelector(".small").innerHTML = "";
     }
   
 }
